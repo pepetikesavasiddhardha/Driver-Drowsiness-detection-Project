@@ -33,7 +33,6 @@ frame_count=0
 alarm_on=False
 #This alarm_on is boolean expression if driver is drowsy then boolean value will be converted as True
 print("[INFO] loading facial landmark predictor model.....")
-#detector=cv2.CascadeClassifier(args['frontal_face'])
 detector=dlib.get_frontal_face_detector()
 predictor=dlib.shape_predictor(args['shape_predictor'])
 #Now we will get the indexes of facial landmarks of left and right eye
