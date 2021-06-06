@@ -1,2 +1,6 @@
  Driver Drowsiness detection Project:
- First we have to import all libraries required for this package
+ First we have to import all libraries required for this package.The libraries which we may have to install were scipy,playsound,imutils and dlib.Installaing first 3 libraries is very easy but installing dlib is very long process.I got to know about this process from https://youtu.be/xaDJ5xnc8dc this youtube video
+playsound is for playing audio files of format .wav,MP3.Later we will add arguments using argparser one argument is path to shape_predictor file which is helpful in detecting facial landmarks another argument is path for alarm audio file and third argument is for giving input the index of webcam we want to use in our case we took default value zero
+Also for doing this project one must have idea on EYE ASPECT RATIO(EAR).EAR in simple terms is length of vertical region divided by length of horizontal region.So from this we can simply understand that EAR is zero if our eye closes,as vertical distance will tend to zero
+Now for my case i took EAR threshold value as 0.3 and number of consecutive frames for which EAR can't be less than threshold as 5 for making model more sensitive ,but in general cases we take that value as 48.
+Now we will 
